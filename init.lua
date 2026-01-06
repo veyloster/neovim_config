@@ -13,18 +13,19 @@ local rtp = vim.opt.rtp
 rtp:prepend(lazypath)
 
 require('lazy').setup({
-	require 'plugins.colortheme4',
-	require 'plugins.neotree',
-	require 'plugins.lualine',
-	require 'plugins.bufferline',
+    require 'plugins.colortheme4',
+    require 'plugins.neotree',
+    require 'plugins.lualine',
+    require 'plugins.bufferline',
     require 'plugins.treesitter',
     require 'plugins.telescope',
     require 'plugins.lsp',
     require 'plugins.autocompletion',
     require 'plugins.gitsigns',
-    require 'plugins.alpha',
+    --require 'plugins.alpha',
     require 'plugins.indent-blankline',
     require 'plugins.neogit',
     require 'plugins.misc',
-    require 'plugins.vim-tmux-navigator'
+    require 'plugins.vim-tmux-navigator',
+    require 'plugins.dashboard'
 })	
