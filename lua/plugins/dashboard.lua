@@ -2,7 +2,7 @@ return {
   'nvimdev/dashboard-nvim',
   event = 'VimEnter',
   config = function()
-
+    vim.api.nvim_set_hl(0, "DashboardHeader", { fg = "#00FF00", bold = true })
     local date_str = "Today is " .. os.date("%A, %B %d, %Y")
 
     require('dashboard').setup {
